@@ -1,15 +1,3 @@
-# you're upto ... http://ruby.learncodethehardway.org/book/ex3.html
-
-# +	addition
-# - subtraction
-# / division
-# * multiplication
-# % modulo (explain modulo here)
-# < less than
-# > greater than
-# <= less than or equal to
-# >= greater than or equal to
-
 # this puts out a basic string
 puts "I will now count my chickens:"
 
