@@ -1,3 +1,3 @@
-My Ruby homework based on the excellent book:
+My Ruby homework based on the (hopefully) excellent book:
 
 http://ruby.learncodethehardway.org/book/
