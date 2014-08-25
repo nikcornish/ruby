@@ -1,15 +1,15 @@
-user_name, pants_color = ARGV.first
-prompt = '> '
+user_name, pants_color = ARGV
+prompt = " > "
 
 puts "Hi #{user_name}. I see your pants are #{pants_color}. This is good."
 puts "I'd like to ask you a few questions."
-puts "Do you like me #{user_name}? ", prompt
+print "Do you like me #{user_name}?", prompt
 likes = $stdin.gets.chomp
 
-puts "Where do you live #{user_name}?", prompt
+print "Where do you live #{user_name}?", prompt
 lives = $stdin.gets.chomp
 
-puts "What kind of computer do you have? ", prompt
+print "What kind of computer do you have?", prompt
 computer = $stdin.gets.chomp
 
 puts """
