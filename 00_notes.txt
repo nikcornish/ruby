@@ -155,24 +155,6 @@ Open(filename, 'w')
 
 
 
-File.open
-	
-	The File.open method is a shorthand way of opening a file, then manipulating the file in some way.
-
-	# opens a file (source), then with that file, reads the contents
-	mySource = File.open(source_file){ |file| file.read}
-
-	I used this code above in ex17_small.rb
-	More: http://ruby.bastardsbook.com/chapters/io/
-
-
-# CLOSING A FILE ==================================================================================
-
-	It's important to close a file after opening it, as it ensures all output is written
-	to a new file and that operating system resources associated with the file in question
-	are freed.
-
-	More: http://blog.rubybestpractices.com/posts/rklemme/001-Using_blocks_for_Robustness.html
 
 
 
@@ -205,19 +187,7 @@ write('things')		Writes 'things' to the file.
 
 
 
-# TERMINAL SHORTCUTS ===============================================================================
 
-ECHO:
-	Echo can create a file "on the fly" in Terminal.
-
-	Eg:
-	$ echo "This will go inside the file." > test.txt
-
-CAT:
-	Cat can display the contents of a file directly in Terminal. 
-	$ cat test.txt
-	This will go inside the file.
-	
 
 
 
