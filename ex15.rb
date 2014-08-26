@@ -1,4 +1,4 @@
-# variable 'filename' with first command line input
+# variable 'filename' with passed the first command line input (name of text file in directory).
 filename = ARGV.first
 
 # variable 'txt' opens the input from above

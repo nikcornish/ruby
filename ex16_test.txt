@@ -1,0 +1,5 @@
+This text
+will be deleted
+by ex16.rb and overwritten
+by some other stuff you put it. 
+Neato!

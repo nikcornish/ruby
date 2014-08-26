@@ -1,0 +1,222 @@
+
+
+
+
+
+
+# BASIC OPERATORS. ======================================================================
+
++	addition
+- subtraction
+/ division
+* multiplication
+% modulus (the remainder of a division sum: 50 % 8 = 2 (50 / 8 = 48, with 2 remaining))
+< less than
+> greater than
+<= less than or equal to
+>= greater than or equal to
+
+
+
+
+
+
+
+
+
+
+# PUTS VS PRINTS. ========================================================================
+
+puts creates line breaks at beginning and end of output, while
+print makes no line breaks at the beginning and end of output. 
+
+use "puts" for general output and
+use "print" for joining things together
+
+eg:
+print "print joins lines "
+print "together and doesn't end with a line break."
+
+puts ""
+
+puts "while puts makes "
+puts "new lines and a line break at the end."
+
+
+
+
+
+
+
+
+
+
+
+
+
+# VARIABLE INTERPOLATION. ========================================================================
+
+Variable Interpolation
+	is replacing variables with their values inside string literals. Also known as variable substitution
+	or variable expression.
+
+	eg:
+
+	name = gets.chomp
+	puts "hello #{name}"
+
+
+
+
+
+
+
+
+
+
+
+
+# ESCAPE SEQUENCES. ========================================================================
+
+\\	Backslash
+\'				Single-quote (')
+\"				Double-quote ("")
+\a 				ASCII bell (BEL) 
+\b 				ASCII backspace (BS)
+\f 				ASCII formfeed (FF)
+\n  			ASCII linefeed (LF)
+\r ASCII		Carriage Return (CR)
+\t ASCII		Horizontal Tab (TAB)
+\uxxxx			Character with 16-bit hex value xxxx (Unicode only)
+\Uxxxxxxxx		Character with 32-bit hex value xxxx (Unicode only)
+\v 				ASCII vertical tab (VT)
+\ooo 			Character with octal value ooo
+\xhh 			Character with hex value hh
+
+
+
+
+
+
+
+
+
+# GETTING INPUT ========================================================================
+
+ARGV: Argument Variable
+	
+	Global array for accepting command line arguments. It contains the arguments passed to your script, one per element.
+
+	The ARGV is the "argument variable," a very standard name in programming, that you will find used in many other languages. 
+	This variable holds the arguments you pass to your Ruby script when you run it. In the exercises you will get to play with this more and see what happens.
+
+ GETS.CHOMP
+
+ 	Accepts user input and removes the ending line break.
+ 	gets.chomp will read ARGV first if it's been used to set global argument variables.
+
+STDIN
+
+ 	Reads the input entered by the user.
+ 	Must be used to accept user input if ARGV values have been specified.
+
+
+
+
+
+
+
+
+
+
+
+
+# OPENING A FILE ==================================================================================
+
+Open(filename, 'w')
+
+	target = open(filename, 'w')
+
+	A target can be specified using ARGV method.
+
+	Flags:
+		
+		Read:
+		r 		Read only mode. Cursor is placed at beginning of file. This is the DEFAULT MODE
+		r+ 		Read write mode. Cursor is placed at beginning of file.
+		
+		Write:
+		w 		Write only mode. Overwrites file if exists. If not, creates a new file for writing.
+		w+ 		Read write mode Overwrites file if exists. If not, creates a new file for reading and writing.
+		
+		Append:
+		a 		Write only mode. If file exists, cursor is at end of file. If doesn't exist, creates new file for writing.
+		a+ 		Read and write mode. If file exists, cursor is at end of file. If doesn't exist, creates new file for reading and writing. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# READING AND WRITING FILES ========================================================================
+
+Important commands regarding the reading and writing of files.
+
+close				Closes the file. Like File > Save.
+read 				Reads the contents of the file. The results can be assigned to a variable.
+readline			Reads one line of a text file.
+truncate			Empties the file. Be careful.
+write('things')		Writes 'things' to the file.
+
+	eg:
+	target.close()
+	target.read()
+	target.write("Put this in ze text file.")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# MORE NOTES. ========================================================================
+# MORE NOTES. ========================================================================
+# MORE NOTES. ========================================================================
+# MORE NOTES. ========================================================================
+# MORE NOTES. ========================================================================
+# MORE NOTES. ========================================================================
+
+
+
+
+
+
+
+
+
+
+
+
