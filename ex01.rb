@@ -7,5 +7,3 @@ puts "I'd much rather you 'not'."
 puts 'I "said" do not touch this.'
 puts "This is another line."
 puts 'This is also the last line.'
-
-

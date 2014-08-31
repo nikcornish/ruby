@@ -1,4 +1,5 @@
 # a format string
+# useful for when wanting to apply the same format to multiple values
 formatter = "%{first} %{second} %{third} %{fourth}"
 
 # puts out the pair value for first, second, third, fourth

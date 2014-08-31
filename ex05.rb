@@ -17,21 +17,18 @@ puts "His teeth are usually #{teeth} depending on the coffee."
 
 puts "If I add #{age}, #{height}, and #{weight} I get #{age + height + weight}."
 
-puts "" #probably a better way to accomplish a line break..?
+# conversion variable for pounds to kg (1 pounds = 0.45kg)
 weight_kg = weight * 0.45392
-height_cm = height * 0.3937
-puts "" #probably a better way to accomplish a line break..?
+# conversion variable for cm inches to cm (1 inch = 0.39cm)
+height_cm = height * 2.54
 
+puts ""
 puts "I weigh #{weight_kg} kilograms."
 puts "I am #{height_cm} centimeters tall."
 
-puts "Most sane people use the Metric System."
-puts "The USA and Liberia still roll with Imperial"
-puts "Metric units are mm, cm, m, km."
-puts "More Metric units are miligrams, grams, kilograms, and tonnes."
-puts "More Imperials units are grain, ounces, pounds, short ton, and long tonnes."
-puts "Imperial units are inches, yards, and miles."
-
-puts "START HISTORY RANT"
-puts "Some more history: The Imperial System (which uses yards, feet, inches, etc to measure length) was developed over hundreds of years in the UK, then the French developed the Metric System (meters) in 1670, which soon spread through Europe, even to England itself in 1963. But the USA and a few other countries still prefer feet and inches."
-puts "END HISTORY RANT"
+# puts "Most sane people use the Metric System."
+# puts "The USA and Liberia still roll with Imperial"
+# puts "Metric units are mm, cm, m, km."
+# puts "More Metric units are miligrams, grams, kilograms, and tonnes."
+# puts "More Imperials units are grain, ounces, pounds, short ton, and long tonnes."
+# puts "Imperial units are inches, yards, and miles."

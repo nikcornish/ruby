@@ -8,4 +8,3 @@ puts "I could have code like this." # and this is ignored.
 
 puts "This will run."
 puts "This is # inside a string."
-
