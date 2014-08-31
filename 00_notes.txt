@@ -7,14 +7,14 @@
 # BASIC OPERATORS. ======================================================================
 
 +	addition
-- subtraction
-/ division
-* multiplication
-% modulus (the remainder of a division sum: 50 % 8 = 2 (50 / 8 = 48, with 2 remaining))
-< less than
-> greater than
-<= less than or equal to
->= greater than or equal to
+-	subtraction
+/	division
+* 	multiplication
+% 	modulus (the remainder of a division sum: 50 % 8 = 2 (50 / 8 = 48, with 2 remaining))
+< 	less than
+> 	greater than
+<=	less than or equal to
+>=	greater than or equal to
 
 
 
@@ -57,8 +57,9 @@ puts "new lines and a line break at the end."
 # VARIABLE INTERPOLATION. ========================================================================
 
 Variable Interpolation
-	is replacing variables with their values inside string literals. Also known as variable substitution
-	or variable expression.
+	
+	Variable Interpolation is replacing variables with their values inside string literals. 
+	Also known as variable substitution or variable expression.
 
 	eg:
 
@@ -78,7 +79,9 @@ Variable Interpolation
 
 # ESCAPE SEQUENCES. ========================================================================
 
-\\	Backslash
+	To include certain characters in a string, you need to 'escape' the character.
+
+\\				Backslash
 \'				Single-quote (')
 \"				Double-quote ("")
 \a 				ASCII bell (BEL) 
@@ -105,20 +108,40 @@ Variable Interpolation
 
 ARGV: Argument Variable
 	
-	Global array for accepting command line arguments. It contains the arguments passed to your script, one per element.
+	ARVG is a global array for accepting command line arguments. It contains the arguments passed to your script, one per element.
 
 	The ARGV is the "argument variable," a very standard name in programming, that you will find used in many other languages. 
 	This variable holds the arguments you pass to your Ruby script when you run it. In the exercises you will get to play with this more and see what happens.
+
+	eg:
+
+	first, second, third = ARGV
+	puts "Your first argument variable is: #{first}"
+	puts "Your next argument variable is: #{second}"
+	puts "Your final argument variable is: #{third}"
 
  GETS.CHOMP
 
  	Accepts user input and removes the ending line break.
  	gets.chomp will read ARGV first if it's been used to set global argument variables.
 
+ 	eg:
+
+ 	userName = gets.chomp
+ 	puts "Your name is #{userName}"
+
 STDIN
 
  	Reads the input entered by the user.
  	Must be used to accept user input if ARGV values have been specified.
+
+ 	eg:
+
+ 	firstName, secondName = ARGV
+	puts "Your name is #{firstName} #{secondName}."
+	print "Please enter your age: "
+	userAge = $stdin.gets.chomp # $stdin required as ARGV contains command line arguments. 
+	puts "You are #{userAge}."
 
 
 
@@ -135,9 +158,11 @@ STDIN
 
 Open(filename, 'w')
 
-	target = open(filename, 'w')
+	A file can be opened using the open command. A target can be specified using ARGV method.
 
-	A target can be specified using ARGV method.
+	eg:
+
+	target = open(filename, 'w')
 
 	Flags:
 		
@@ -171,13 +196,14 @@ Open(filename, 'w')
 
 Important commands regarding the reading and writing of files.
 
-close				Closes the file. Like File > Save.
-read 				Reads the contents of the file. The results can be assigned to a variable.
-readline			Reads one line of a text file.
-truncate			Empties the file. Be careful.
-write('things')		Writes 'things' to the file.
+	close				Closes the file. Like File > Save.
+	read 				Reads the contents of the file. The results can be assigned to a variable.
+	readline			Reads one line of a text file.
+	truncate			Empties the file. Be careful.
+	write('things')		Writes 'things' to the file.
 
 	eg:
+	
 	target.close()
 	target.read()
 	target.write("Put this in ze text file.")
